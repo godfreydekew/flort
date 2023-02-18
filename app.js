@@ -35,8 +35,9 @@ const jsonData=JSON.stringify(data);
 const url="https://us21.api.mailchimp.com/3.0/lists/39d16124da";
 const options={
   method:"POST",
-  auth:"dekew:cf190cb1922a30ecb11711ebe50db617-us21",
+  auth:"dekew:9389c1b5b068038326dc0942962b8578-us21",
 }
+
 const request=https.request(url,options,function(response) {
 if (response.statusCode===200){
     res.sendFile(__dirname+"/success.html")
